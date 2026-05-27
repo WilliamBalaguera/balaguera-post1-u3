@@ -1,0 +1,30 @@
+/* ── Reset global ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ── Variables CSS (Custom Properties) ── */
+:root {
+  --color-primary   : #C62828;
+  --color-secondary : #E53935;
+  --color-dark      : #8E0000;
+  --color-text      : #000000;
+  --color-grey      : #808080;
+  --color-highlight : #FFEBEE;
+  --color-bg        : #F5F5F5;
+  --color-white     : #FFFFFF;
+  --font-base       : "Arial", Helvetica, sans-serif;
+  --radius          : 6px;
+  --shadow          : 0 2px 12px rgba(0,0,0,0.1);
+}
+
+/* ── Base documento ── */
+html { font-size: 16px; scroll-behavior: smooth; }
+body {
+  font-family : var(--font-base);
+  font-size   : 1rem;
+  line-height : 1.6;
+  color       : var(--color-text);
+  background  : var(--color-bg);
+}
+
+/* ── Contenedor centrado ── */
+.container { max-width: 960px; width: 90%; margin: 0 auto; }
